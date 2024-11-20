@@ -10,7 +10,6 @@ public class CharacterMovement : MonoBehaviour
     private Animator _animator;
 
     private float _horizontalInput;
-    private float _verticalInput;
     
     private float _moveSpeed => _moveSpeedField;
     private float _jumpForce => _jumpForceField;
@@ -73,6 +72,5 @@ public class CharacterMovement : MonoBehaviour
     private void Inputs()
     {
         _horizontalInput = Input.GetAxis("Horizontal");
-        _verticalInput = Input.GetAxis("Vertical");
     }
 }
