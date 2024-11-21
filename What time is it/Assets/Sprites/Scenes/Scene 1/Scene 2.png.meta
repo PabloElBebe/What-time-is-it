@@ -193,6 +193,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Scene 2_4
+      rect:
+        serializedVersion: 2
+        x: 4022
+        y: 200
+        width: 1342
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8d8c81909bf704e97ba0e5fdcae9a5
+      internalID: -1426886168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -208,6 +229,7 @@ TextureImporter:
       Scene 2_1: 717089505
       Scene 2_2: 809302352
       Scene 2_3: -2056622010
+      Scene 2_4: -1426886168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
