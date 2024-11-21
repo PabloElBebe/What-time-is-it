@@ -85,8 +85,6 @@ public class CharacterMovement : MonoBehaviour
             return;
 
         _rb2D.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
-        Debug.Log(_velocityX);
-        Debug.Log(_velocityY);
     }
 
     private void Animate()
