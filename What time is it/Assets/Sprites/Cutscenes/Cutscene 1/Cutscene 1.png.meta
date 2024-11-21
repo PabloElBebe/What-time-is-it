@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -214,6 +214,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cutscene 1_5
+      rect:
+        serializedVersion: 2
+        x: 3667
+        y: 2982
+        width: 319
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ce628385c2a3f4ea57b5104d16699b
+      internalID: 2088866604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -230,6 +251,7 @@ TextureImporter:
       Cutscene 1_2: -1184730949
       Cutscene 1_3: 2032162763
       Cutscene 1_4: -698839435
+      Cutscene 1_5: 2088866604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
