@@ -7,6 +7,10 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float _jumpForceField;
     [SerializeField] private LayerMask _layerMask;
 
+    [SerializeField] private Transform _handTransform;
+    [SerializeField] private GameObject _bottlePrefab;
+    [SerializeField] private Vector2 _bottleSpawnOffset;
+
     private Rigidbody2D _rb2D;
     private Animator _animator;
 
@@ -15,11 +19,16 @@ public class CharacterMovement : MonoBehaviour
     private float _velocityX;
     private float _velocityY;
 
+    private int _bottlesAmount;
+
     private float _moveSpeed => _moveSpeedField;
     private float _jumpForce => _jumpForceField;
 
     private void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        
         _rb2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
@@ -35,6 +44,20 @@ public class CharacterMovement : MonoBehaviour
             Jump();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.GetComponent<Bottle>())
+            return;
+
+        other.GetComponent<Bottle>().TakeBottle(transform);
+        TakeBottle();
+    }
+
+    private void TakeBottle()
+    {
+        _bottlesAmount++;
+    }
+    
     private void Movement()
     {
         if (_rb2D == null)

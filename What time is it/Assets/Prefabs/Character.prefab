@@ -260,6 +260,9 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 64
+  _handTransform: {fileID: 1376186329883573850}
+  _bottlePrefab: {fileID: 4868241021892468479, guid: 2e9634759d06c634cb770cee287e621f, type: 3}
+  _bottleSpawnOffset: {x: 0.39, y: 0.25}
 --- !u!50 &2898771052684774195
 Rigidbody2D:
   serializedVersion: 4
@@ -529,7 +532,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.012185058, w: 0.9999258}
   m_LocalPosition: {x: 0.11972799, y: 0.00000015807956, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2631833875051517605}
   m_Father: {fileID: 1359108626496078200}
@@ -690,7 +693,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.014860473, w: 0.9998896}
   m_LocalPosition: {x: 0.9667611, y: -0.000000012325399, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7115935505392345309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
