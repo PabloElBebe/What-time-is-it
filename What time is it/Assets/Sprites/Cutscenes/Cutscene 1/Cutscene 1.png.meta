@@ -223,7 +223,7 @@ TextureImporter:
         width: 319
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,6 +231,27 @@ TextureImporter:
       bones: []
       spriteID: e6ce628385c2a3f4ea57b5104d16699b
       internalID: 2088866604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cutscene 1_6
+      rect:
+        serializedVersion: 2
+        x: 3761
+        y: 2565
+        width: 157
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd43d69fa1d6f974bb136ebe9d508189
+      internalID: 1570268523
       vertices: []
       indices: 
       edges: []
@@ -252,6 +273,7 @@ TextureImporter:
       Cutscene 1_3: 2032162763
       Cutscene 1_4: -698839435
       Cutscene 1_5: 2088866604
+      Cutscene 1_6: 1570268523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
