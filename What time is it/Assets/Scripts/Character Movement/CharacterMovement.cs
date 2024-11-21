@@ -78,13 +78,15 @@ public class CharacterMovement : MonoBehaviour
     }
 
     private void Jump()
-    {
+    {   
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.down, 4.6f, _layerMask);
 
         if (_rb2D == null || !hit2D)
             return;
 
         _rb2D.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
+        Debug.Log(_velocityX);
+        Debug.Log(_velocityY);
     }
 
     private void Animate()
@@ -92,15 +94,18 @@ public class CharacterMovement : MonoBehaviour
         if (_animator == null || _rb2D == null)
             return;
         
-        if (Mathf.Abs(_velocityY - _rb2D.velocity.normalized.y) > 0.005f)
+        RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.down, 4.6f, _layerMask);
+        
+        if (Mathf.Abs(_velocityY - _rb2D.velocity.normalized.y) > 0.005f && !hit2D)
             _velocityY = Mathf.Lerp(_velocityY, _rb2D.velocity.normalized.y, Time.deltaTime * 12);
+        else if (Mathf.Abs(_velocityY) > 0.001f)
+            _velocityY= Mathf.Lerp(_velocityY, 0, Time.deltaTime * 12);
 
         if (Mathf.Abs(_velocityX - _rb2D.velocity.normalized.x) > 0.005f)
             _velocityX = Mathf.Lerp(_velocityX, _rb2D.velocity.normalized.x, Time.deltaTime * _moveSpeed);
 
         _animator.SetFloat("x", _velocityX);
         _animator.SetFloat("y", _velocityY);
-
     }
 
     private void Inputs()
