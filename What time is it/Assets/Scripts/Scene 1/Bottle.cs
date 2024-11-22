@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -24,6 +25,14 @@ public class Bottle : MonoBehaviour
 
         _animator.SetBool("isTaken", true);
 
+        List<string> phrases = new List<string>();
+        
+        phrases.Add("Надо бы бухнуть");
+        phrases.Add("Пойду водки найду епта как в песне");
+        phrases.Add("Ладно пойду я");
+
+        HelpSystems.StartDialogue(phrases);
+        
         StartCoroutine(MoveBottle(targetTransform));
     }
 
