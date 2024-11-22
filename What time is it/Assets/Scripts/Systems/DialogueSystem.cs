@@ -11,7 +11,9 @@ public class DialogueSystem : MonoBehaviour
 
     private Animator _animator;
 
-    private List<string> _currentPhrases;
+    private List<string> CurrentPhrases;
+
+    private Coroutine _currentRoutine;
 
     private void Awake()
     {
@@ -25,17 +27,20 @@ public class DialogueSystem : MonoBehaviour
 
     private void StartDialogue(List<string> phrases)
     {
-        _currentPhrases = phrases;
+        if (_currentRoutine != null)
+            return;
+        
+        CurrentPhrases = phrases;
         
         _animator.SetBool("isOpened", true);
     }
 
     private void AnimationEnded()
     {
-        if (_currentPhrases.Count <= 0)
+        if (CurrentPhrases.Count <= 0)
             return;
 
-        StartCoroutine(WritePhrases(_currentPhrases));
+        _currentRoutine = StartCoroutine(WritePhrases(CurrentPhrases));
     }
     
     private IEnumerator WritePhrases(List<string> phrases)
@@ -61,6 +66,8 @@ public class DialogueSystem : MonoBehaviour
         ReloadText(String.Empty);
          
         _animator.SetBool("isOpened", false);
+
+        _currentRoutine = null;
     }
 
     private void ReloadText(string currentString)

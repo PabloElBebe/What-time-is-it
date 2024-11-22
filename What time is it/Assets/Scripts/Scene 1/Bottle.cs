@@ -31,9 +31,11 @@ public class Bottle : MonoBehaviour
         phrases.Add("Пойду водки найду епта как в песне");
         phrases.Add("Ладно пойду я");
 
-        HelpSystems.StartDialogue(phrases);
+        HelpSystems.StartDialogue?.Invoke(phrases);
         
         StartCoroutine(MoveBottle(targetTransform));
+        
+        HelpSystems.SetCurrentLocation?.Invoke(1);
     }
 
     private IEnumerator MoveBottle(Transform targetTransform)
