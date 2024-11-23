@@ -27,15 +27,12 @@ public class Bottle : MonoBehaviour
 
         List<string> phrases = new List<string>();
         
-        phrases.Add("Надо бы бухнуть");
-        phrases.Add("Пойду водки найду епта как в песне");
-        phrases.Add("Ладно пойду я");
-
+        phrases.Add("Обычно, чтобы пригубить, я использовал «E»...");
+        
         HelpSystems.StartDialogue?.Invoke(phrases);
+        HelpSystems.OpenHelpHint?.Invoke(phrases);
         
         StartCoroutine(MoveBottle(targetTransform));
-        
-        HelpSystems.SetCurrentLocation?.Invoke(1);
     }
 
     private IEnumerator MoveBottle(Transform targetTransform)
