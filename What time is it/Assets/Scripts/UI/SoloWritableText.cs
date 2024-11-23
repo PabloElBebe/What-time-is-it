@@ -46,7 +46,7 @@ public class SoloWritableText : MonoBehaviour
                 yield return new WaitForSeconds(_writingSpeed);
             }
             
-            yield return new WaitForSeconds(_delayTime);
+            yield return new WaitForSeconds(_delayTime * phrase.Length);
         }
 
         string newPhrase = phrase;

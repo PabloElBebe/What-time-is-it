@@ -42,6 +42,11 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             Jump();
+
+        if (Input.GetKeyDown(KeyCode.E))
+            HelpSystems.SetCurrentLocation(1);
+        else if (Input.GetKeyDown(KeyCode.R))
+            HelpSystems.SetCurrentLocation(0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
