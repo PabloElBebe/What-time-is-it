@@ -25,13 +25,6 @@ public class Bottle : MonoBehaviour
 
         _animator.SetBool("isTaken", true);
 
-        List<string> phrases = new List<string>();
-        
-        phrases.Add("Обычно, чтобы пригубить, я использовал «E»...");
-        
-        HelpSystems.OpenThoughts?.Invoke(phrases);
-        HelpSystems.StartDialogue?.Invoke(phrases);
-        
         StartCoroutine(MoveBottle(targetTransform));
     }
 

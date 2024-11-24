@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
@@ -24,6 +25,9 @@ public class CharacterMovement : MonoBehaviour
     private float _moveSpeed => _moveSpeedField;
     private float _jumpForce => _jumpForceField;
 
+    private bool _isOnPickableItem;
+    private Bottle _currentBottleObject;
+
     private void Start()
     {
         Cursor.visible = false;
@@ -43,19 +47,39 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             Jump();
 
-        if (Input.GetKeyDown(KeyCode.E))
-            HelpSystems.Transition?.Invoke(1);
-        else if (Input.GetKeyDown(KeyCode.R))
-            HelpSystems.Transition?.Invoke(0);
+        if (_currentBottleObject != null && Input.GetKeyDown(KeyCode.E))
+        {
+            _currentBottleObject.GetComponent<Bottle>().TakeBottle(transform);
+            TakeBottle();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.GetComponent<Bottle>())
-            return;
+        if (other.GetComponent<Bottle>())
+        {
+            _currentBottleObject = other.GetComponent<Bottle>();
 
-        other.GetComponent<Bottle>().TakeBottle(transform);
-        TakeBottle();
+            if (BasicSaveSystem.LoadBoolData("pickUpHint"))
+                return;
+
+            List<string> phrases = new List<string>();
+            phrases.Add("Обычно, чтобы поднять предмет, я использовал «E»...");
+            
+            HelpSystems.OpenThoughts(phrases);
+            
+            BasicSaveSystem.SaveBoolData(true, "pickUpHint");
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (_currentBottleObject != null)
+            _currentBottleObject = null;
     }
 
     private void TakeBottle()
