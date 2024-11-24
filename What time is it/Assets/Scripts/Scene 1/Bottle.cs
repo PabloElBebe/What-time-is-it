@@ -30,6 +30,7 @@ public class Bottle : MonoBehaviour
         phrases.Add("Обычно, чтобы пригубить, я использовал «E»...");
         
         HelpSystems.OpenThoughts?.Invoke(phrases);
+        HelpSystems.StartDialogue?.Invoke(phrases);
         
         StartCoroutine(MoveBottle(targetTransform));
     }

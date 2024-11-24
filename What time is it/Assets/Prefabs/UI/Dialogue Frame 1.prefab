@@ -246,4 +246,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueSpeed: 0.03
+  _delayTime: 0.05
   _dialogueTMP: {fileID: 4692490495690940515}

@@ -7,6 +7,7 @@ using UnityEngine;
 public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] private float _dialogueSpeed;
+    [SerializeField] private float _delayTime;
     [SerializeField] private TextMeshProUGUI _dialogueTMP;
 
     private Animator _animator;
@@ -56,11 +57,18 @@ public class DialogueSystem : MonoBehaviour
             {
                 phrase += letter;
                 ReloadText(phrase);
+                
+                if (Input.GetMouseButtonDown(0))
+                {
+                    phrase = currentPhrase;
+                    ReloadText(phrase);
+                    break;
+                }
 
                 yield return new WaitForSeconds(_dialogueSpeed);
             }
             
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(_delayTime * phrase.Length);
         }
         
         ReloadText(String.Empty);
