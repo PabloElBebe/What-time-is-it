@@ -44,9 +44,9 @@ public class CharacterMovement : MonoBehaviour
             Jump();
 
         if (Input.GetKeyDown(KeyCode.E))
-            HelpSystems.SetCurrentLocation(1);
+            HelpSystems.Transition?.Invoke(1);
         else if (Input.GetKeyDown(KeyCode.R))
-            HelpSystems.SetCurrentLocation(0);
+            HelpSystems.Transition?.Invoke(0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
