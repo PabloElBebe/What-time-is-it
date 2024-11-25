@@ -70,6 +70,10 @@ public class CharacterMovement : MonoBehaviour
             
             BasicSaveSystem.SaveBoolData(true, "pickUpHint");
         }
+        else if (other.CompareTag("NPC Talkable"))
+        {
+            other.GetComponent<TalkableNPC>().StartTalking();
+        }
         else
         {
             return;
