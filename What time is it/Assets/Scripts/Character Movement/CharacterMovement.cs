@@ -27,6 +27,7 @@ public class CharacterMovement : MonoBehaviour
 
     private bool _isOnPickableItem;
     private Bottle _currentBottleObject;
+    private TalkableNPC _currentTalkableNpc;
 
     private void Start()
     {
@@ -53,9 +54,14 @@ public class CharacterMovement : MonoBehaviour
             TakeBottle();
         }
 
+        if (_currentTalkableNpc != null && Input.GetKeyDown(KeyCode.F))
+        {
+            _currentTalkableNpc.StartTalking();
+        }
+        
         if (Input.GetKeyDown(KeyCode.R))
             HelpSystems.Transition(1);
-        else if (Input.GetKeyDown(KeyCode.F))
+        else if (Input.GetKeyDown(KeyCode.T))
             HelpSystems.Transition(0);
     }
 
@@ -77,7 +83,7 @@ public class CharacterMovement : MonoBehaviour
         }
         else if (other.CompareTag("NPC Talkable"))
         {
-            other.GetComponent<TalkableNPC>().StartTalking();
+            _currentTalkableNpc = other.GetComponent<TalkableNPC>();
         }
         else
         {
@@ -89,6 +95,9 @@ public class CharacterMovement : MonoBehaviour
     {
         if (_currentBottleObject != null)
             _currentBottleObject = null;
+
+        if (_currentTalkableNpc != null)
+            _currentTalkableNpc = null;
     }
 
     private void TakeBottle()

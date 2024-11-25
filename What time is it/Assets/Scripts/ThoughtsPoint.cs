@@ -5,6 +5,7 @@ using UnityEngine;
 public class ThoughtsPoint : MonoBehaviour
 {
     [SerializeField] private List<string> Phrases;
+    [SerializeField] private bool _isDestroy;
 
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -12,5 +13,10 @@ public class ThoughtsPoint : MonoBehaviour
         {
             HelpSystems.OpenThoughts(Phrases);
         }
+        
+        if (!_isDestroy)
+            return;
+        
+        Destroy(gameObject);
     }
 }

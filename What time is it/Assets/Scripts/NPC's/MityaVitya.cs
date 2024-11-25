@@ -12,9 +12,6 @@ public class MityaVitya : TalkableNPC
 
     public override void StartTalking()
     {
-        if (BasicSaveSystem.LoadBoolData("mityaVityaTalked"))
-            return;
-        
         base.StartTalking();
 
         HelpSystems.StartDialogue?.Invoke((List<string>)Phrases);
