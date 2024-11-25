@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 5238831463120439686}
   - component: {fileID: 4439278786425901329}
   - component: {fileID: 6557330835938627704}
+  - component: {fileID: 7415639396625493241}
   - component: {fileID: 5210416413551690078}
   m_Layer: 0
   m_Name: Bottle To Take
@@ -228,6 +229,22 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7415639396625493241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3493154470771122154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b71106795583844e9a653017d43e577, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hintText: E
+  _hintPrefab: {fileID: 5563998073677530355, guid: 0ceef0866507cdb41ab14e4c9f8a039d, type: 3}
+  _offset: {x: 0, y: 2, z: 0}
+  _canvas: {fileID: 0}
 --- !u!70 &5210416413551690078
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

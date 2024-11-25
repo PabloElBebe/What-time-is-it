@@ -52,6 +52,11 @@ public class CharacterMovement : MonoBehaviour
             _currentBottleObject.GetComponent<Bottle>().TakeBottle(transform);
             TakeBottle();
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+            HelpSystems.Transition(1);
+        else if (Input.GetKeyDown(KeyCode.F))
+            HelpSystems.Transition(0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
