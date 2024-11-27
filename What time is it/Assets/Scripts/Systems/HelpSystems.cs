@@ -9,4 +9,6 @@ public static class HelpSystems
     public static Action<List<string>> StartDialogue;
     public static Action<List<string>> OpenHelpHint;
     public static Action<List<string>> OpenThoughts;
+
+    public static Action DisableAllFrames;
 }

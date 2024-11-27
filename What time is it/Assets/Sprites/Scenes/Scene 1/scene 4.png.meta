@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 27677f21b0f27db4cb1fb428ded1c35d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scene 4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2130
+        width: 7588
+        height: 3507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da516534d454f41429d07494a6d253f5
+      internalID: -475269884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene 4_1
+      rect:
+        serializedVersion: 2
+        x: 7789
+        y: 4168
+        width: 1605
+        height: 1337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403ec851d7178cd44baecd7b0c7fb735
+      internalID: 841237709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene 4_16
+      rect:
+        serializedVersion: 2
+        x: 7737
+        y: 2085
+        width: 1819
+        height: 2102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330da1f5f59ced54fb21c6e701db644a
+      internalID: 1285032891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene 4_19
+      rect:
+        serializedVersion: 2
+        x: 7608
+        y: 0
+        width: 2798
+        height: 2034
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fce9302cbf18e4e8c1a77e65631087
+      internalID: 2062671264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene 4_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7596
+        height: 2113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4ed425e1d7d7846b19772126bd06f1
+      internalID: -1189008638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      scene 4_0: -475269884
+      scene 4_1: 841237709
+      scene 4_10: -73757409
+      scene 4_11: 989887636
+      scene 4_12: -533511127
+      scene 4_13: 667788226
+      scene 4_14: 1193596537
+      scene 4_15: -2045733741
+      scene 4_16: 1285032891
+      scene 4_17: -750723245
+      scene 4_18: 1443909153
+      scene 4_19: 2062671264
+      scene 4_2: -1189008638
+      scene 4_20: 1800157322
+      scene 4_21: 1603496316
+      scene 4_22: 483255618
+      scene 4_23: 1894314756
+      scene 4_24: 1328286863
+      scene 4_25: 1193340562
+      scene 4_26: 1993609195
+      scene 4_27: 1876448414
+      scene 4_28: -1183964271
+      scene 4_29: 1954043034
+      scene 4_3: -885531630
+      scene 4_30: -1201779855
+      scene 4_31: -1277061476
+      scene 4_32: 2107028558
+      scene 4_33: 1768169758
+      scene 4_34: 770443179
+      scene 4_35: 1651267424
+      scene 4_36: -1174655157
+      scene 4_37: 446337947
+      scene 4_38: 1692375960
+      scene 4_39: -1721154155
+      scene 4_4: -1785538071
+      scene 4_40: -92540269
+      scene 4_41: -208297194
+      scene 4_42: 527101135
+      scene 4_43: 230298997
+      scene 4_44: 1768193972
+      scene 4_45: 1838162928
+      scene 4_46: -1438275263
+      scene 4_47: -1706814291
+      scene 4_5: -915368010
+      scene 4_6: -227189027
+      scene 4_7: -2018441713
+      scene 4_8: -1834327577
+      scene 4_9: -917450128
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
