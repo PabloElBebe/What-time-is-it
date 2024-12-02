@@ -12,7 +12,7 @@ public class ParallaxBackground : MonoBehaviour
         if (_parallaxCamera == null)
             return;
 
-        _parallaxCamera.onCameraTranslate += Move;
+        _parallaxCamera.OnCameraTranslate += Move;
         
         SetLayers();
     }

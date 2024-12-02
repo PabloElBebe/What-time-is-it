@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2130
-        width: 7588
-        height: 3507
+        y: 1256
+        width: 3798
+        height: 1563
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: scene 4_1
       rect:
         serializedVersion: 2
-        x: 7789
-        y: 4168
-        width: 1605
-        height: 1337
+        x: 3905
+        y: 2129
+        width: 774
+        height: 622
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,55 +152,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scene 4_16
-      rect:
-        serializedVersion: 2
-        x: 7737
-        y: 2085
-        width: 1819
-        height: 2102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 330da1f5f59ced54fb21c6e701db644a
-      internalID: 1285032891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scene 4_19
-      rect:
-        serializedVersion: 2
-        x: 7608
-        y: 0
-        width: 2798
-        height: 2034
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8fce9302cbf18e4e8c1a77e65631087
-      internalID: 2062671264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scene 4_2
+      name: scene 4_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7596
-        height: 2113
+        width: 3814
+        height: 1255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +166,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4ed425e1d7d7846b19772126bd06f1
-      internalID: -1189008638
+      spriteID: 926014f34d5067a4ea3bd4b462f7ca2d
+      internalID: -1785538071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene 4_5
+      rect:
+        serializedVersion: 2
+        x: 3868
+        y: 1042
+        width: 910
+        height: 1052
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f272fad11a22241bf61476b3410457
+      internalID: -915368010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene 4_6
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 0
+        width: 1347
+        height: 1013
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681a40c1ee4804b48b37dff141ab2b75
+      internalID: -227189027
       vertices: []
       indices: 
       edges: []
@@ -227,52 +227,13 @@ TextureImporter:
     nameFileIdTable:
       scene 4_0: -475269884
       scene 4_1: 841237709
-      scene 4_10: -73757409
-      scene 4_11: 989887636
-      scene 4_12: -533511127
-      scene 4_13: 667788226
-      scene 4_14: 1193596537
-      scene 4_15: -2045733741
-      scene 4_16: 1285032891
-      scene 4_17: -750723245
-      scene 4_18: 1443909153
-      scene 4_19: 2062671264
       scene 4_2: -1189008638
-      scene 4_20: 1800157322
-      scene 4_21: 1603496316
-      scene 4_22: 483255618
-      scene 4_23: 1894314756
-      scene 4_24: 1328286863
-      scene 4_25: 1193340562
-      scene 4_26: 1993609195
-      scene 4_27: 1876448414
-      scene 4_28: -1183964271
-      scene 4_29: 1954043034
       scene 4_3: -885531630
-      scene 4_30: -1201779855
-      scene 4_31: -1277061476
-      scene 4_32: 2107028558
-      scene 4_33: 1768169758
-      scene 4_34: 770443179
-      scene 4_35: 1651267424
-      scene 4_36: -1174655157
-      scene 4_37: 446337947
-      scene 4_38: 1692375960
-      scene 4_39: -1721154155
       scene 4_4: -1785538071
-      scene 4_40: -92540269
-      scene 4_41: -208297194
-      scene 4_42: 527101135
-      scene 4_43: 230298997
-      scene 4_44: 1768193972
-      scene 4_45: 1838162928
-      scene 4_46: -1438275263
-      scene 4_47: -1706814291
       scene 4_5: -915368010
       scene 4_6: -227189027
       scene 4_7: -2018441713
       scene 4_8: -1834327577
-      scene 4_9: -917450128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
